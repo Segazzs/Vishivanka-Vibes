@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vyshyvanka Vibes</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__logo" href="./index.html">
+            <svg class="header-logo__icon" width="44" height="39">
+              <use href="./img/header/logo.svg"></use>
+            </svg>
+          </a>
+          <button class="header__open-menu">
+            <svg class="header-open__icon" width="36" height="24">
+              <use href="./img/header/mobile-menu-open.svg"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==================================== HERO ==================================== -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Reviving the traditional
+            <span class="accent">Ukrainian</span> artistry in every stitch.
+          </h1>
+          <button class="hero__btn">
+            Order
+            <svg class="hero-btn__icon" width="26" height="10">
+              <use href="./img/hero/arrow.svg"></use>
+            </svg>
+          </button>
+          <picture>
+            <source
+              srcset="
+                ./img/hero/girl-desk-1x.png 1x,
+                ./img/hero/girl-desk-2x.png 2x
+              "
+              media="(min-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./img/hero/girl-tab-1x.png 1x,
+                ./img/hero/girl-tab-2x.png 2x
+              "
+              media="(min-width: 779px)"
+            />
+            <source
+              srcset="
+                ./img/hero/girl-mob-1x.png 1x,
+                ./img/hero/girl-mob-2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="hero__img"
+              src="./img/hero/girl-mob-1x.png"
+              alt="Hero girl"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- ==================================== ABOUT ==================================== -->
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title">About us</h2>
+          <p class="about__desc">
+            The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
+            vyshyvanka comes to life with new zest and style. Our store offers a
+            wide selection of high-quality and authentic embroidery, which
+            combines the elegance of traditional needlework and modern design.
+          </p>
+          <p class="about__desc">
+            In "Vyshyvanka Vibes" you will find various models of embroidery,
+            from classic to modern, corresponding to the latest fashion trends.
+            Our embroidery is made using natural fabrics and is embroidered by
+            highly qualified craftsmen who convey the beauty of Ukrainian
+            culture in every detail.We believe that vyshyvanka is not just
+            clothing, but a symbol of national pride, the heritage of our
+            ancestors and a way of expressing one's individuality. Each
+            embroidery from "Vyshyvanka Vibes" has its own unique history and
+            symbolism, which gives it a special meaning.
+          </p>
+          <picture>
+            <source
+              srcset="
+                ./img/about/about-desk-1x.png 1x,
+                ./img/about/about-desk-2x.png 2x
+              "
+              media="(min-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./img/about/about-tab-1x.png 1x,
+                ./img/about/about-tab-2x.png 2x
+              "
+              media="(min-width: 779px)"
+            />
+            <source
+              srcset="
+                ./img/about/about-mob-1x.png 1x,
+                ./img/about/about-mob-2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="about__img"
+              src="./img/about/about-mob-1x.png"
+              alt="About picture"
+            />
+          </picture>
+
+          <img class="about__img-bg" src="./img/vyshyvanka/silver.png" alt="" />
+        </div>
+      </section>
+
+      <!-- ==================================== COLLECTION ==================================== -->
+      <section class="collection">
+        <div class="container">
+          <img
+            class="collection__img-bg"
+            src="./img/vyshyvanka/yellow.png"
+            alt=""
+          />
+          <h2 class="collection__title">Our collection</h2>
+          <ul class="collection__list">
+            <li class="collection__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/collection/collection-desk-1-1x.png 1x,
+                    ./img/collection/collection-desk-1-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-tab-1-1x.png 1x,
+                    ./img/collection/collection-tab-1-2x.png 2x
+                  "
+                  media="(min-width: 779px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-mob-1-1x.png 1x,
+                    ./img/collection/collection-mob-1-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="collection__img"
+                  src="./img/collection/collection-mob-1-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+              <h3 class="collection__sun-title">
+                AUGUST Poltava women's blouseRING
+              </h3>
+            </li>
+            <li class="collection__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/collection/collection-desk-2-1x.png 1x,
+                    ./img/collection/collection-desk-2-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-tab-2-1x.png 1x,
+                    ./img/collection/collection-tab-2-2x.png 2x
+                  "
+                  media="(min-width: 779px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-mob-2-1x.png 1x,
+                    ./img/collection/collection-mob-2-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="collection__img"
+                  src="./img/collection/collection-mob-2-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+              <h3 class="collection__sun-title">Women's blouse Gorgany</h3>
+            </li>
+            <li class="collection__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/collection/collection-desk-3-1x.png 1x,
+                    ./img/collection/collection-desk-3-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-tab-3-1x.png 1x,
+                    ./img/collection/collection-tab-3-2x.png 2x
+                  "
+                  media="(min-width: 779px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-mob-3-1x.png 1x,
+                    ./img/collection/collection-mob-3-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="collection__img"
+                  src="./img/collection/collection-mob-3-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+              <h3 class="collection__sun-title">Women's blouse Crimea</h3>
+            </li>
+            <li class="collection__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/collection/collection-desk-4-1x.png 1x,
+                    ./img/collection/collection-desk-4-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-tab-4-1x.png 1x,
+                    ./img/collection/collection-tab-4-2x.png 2x
+                  "
+                  media="(min-width: 779px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-mob-4-1x.png 1x,
+                    ./img/collection/collection-mob-4-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="collection__img"
+                  src="./img/collection/collection-mob-4-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+              <h3 class="collection__sun-title">Men's shirt Verkhovina</h3>
+            </li>
+            <li class="collection__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/collection/collection-desk-5-1x.png 1x,
+                    ./img/collection/collection-desk-5-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-tab-5-1x.png 1x,
+                    ./img/collection/collection-tab-5-2x.png 2x
+                  "
+                  media="(min-width: 779px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-mob-5-1x.png 1x,
+                    ./img/collection/collection-mob-5-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="collection__img"
+                  src="./img/collection/collection-mob-5-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+              <h3 class="collection__sun-title">Mountain men's shirt</h3>
+            </li>
+            <li class="collection__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/collection/collection-desk-6-1x.png 1x,
+                    ./img/collection/collection-desk-6-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-tab-6-1x.png 1x,
+                    ./img/collection/collection-tab-6-2x.png 2x
+                  "
+                  media="(min-width: 779px)"
+                />
+                <source
+                  srcset="
+                    ./img/collection/collection-mob-6-1x.png 1x,
+                    ./img/collection/collection-mob-6-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="collection__img"
+                  src="./img/collection/collection-mob-6-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+              <h3 class="collection__sun-title">Men's shirt Yasen</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================================== PICTURE ==================================== -->
+      <section class="picture">
+        <picture>
+          <source
+            srcset="
+              ./img/photo-section/img-desk-1x.png 1x,
+              ./img/photo-section/img-desk-2x.png 2x
+            "
+            media="(min-width: 1279px)"
+          />
+          <source
+            srcset="
+              ./img/photo-section/img-tab-1x.png 1x,
+              ./img/photo-section/img-tab-2x.png 2x
+            "
+            media="(min-width: 779px)"
+          />
+          <source
+            srcset="
+              ./img/photo-section/img-mob-1x.png 1x,
+              ./img/photo-section/img-mob-2x.png 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./img/photo-section/img-mob-1x.png"
+            alt="Collection item 1"
+          />
+        </picture>
+      </section>
+
+      <!-- ==================================== ORDER ==================================== -->
+      <section class="order">
+        <div class="container">
+          <h2 class="order__title">
+            <span class="accent">Subscribe</span> our newsletter to receive the
+            latest news and exclusive offers every week.
+          </h2>
+          <form class="order__form">
+            <div class="order-form__wraper">
+              <input
+                class="order-form__input"
+                type="text"
+                name="name"
+                placeholder="Enter your full name"
+                aria-label="Enter your full name"
+              />
+              <input
+                class="order-form__input"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                aria-label="Enter your email"
+              />
+              <textarea
+                class="order-form__input order-form__textarea"
+                name="comment"
+                placeholder="Comment"
+                aria-label="Comment"
+              ></textarea>
+            </div>
+            <button class="hero__btn order-form__btn">
+              send
+              <svg class="hero-btn__icon" width="26" height="10">
+                <use href="./img/hero/arrow.svg"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ==================================== REVIEW ==================================== -->
+      <section class="review">
+        <div class="container">
+          <h2 class="review__title">Testimonials</h2>
+          <ul class="review__list">
+            <li class="review__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/testimonials/reviewer-1-desk-1x.png 1x,
+                    ./img/testimonials/reviewer-1-desk-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/testimonials/reviewer-1-tab-1x.png 1x,
+                    ./img/testimonials/reviewer-1-tab-2x.png 2x
+                  "
+                  media="(min-width: 779px)"
+                />
+                <source
+                  srcset="
+                    ./img/testimonials/reviewer-1-mob-1x.png 1x,
+                    ./img/testimonials/reviewer-1-mob-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="review-item__img"
+                  src="./img/testimonials/reviewer-1-mob-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+
+              <h3 class="review-item__name">Maria Tkachuk</h3>
+              <p class="review-item__text">
+                I was pleasantly surprised by the variety of embroidery offered
+                by Vyshyvanka Vibes. They have models for every taste - from
+                classic to modern. I bought an embroidered dress to celebrate a
+                special occasion and received impeccable service and refinement
+                in every detail.
+              </p>
+            </li>
+            <li class="review__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/testimonials/reviewer-2-desk-1x.png 1x,
+                    ./img/testimonials/reviewer-2-desk-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/testimonials/reviewer-2-tab-1x.png 1x,
+                    ./img/testimonials/reviewer-2-tab-2x.png 2x
+                  "
+                  media="(min-width: 779px)"
+                />
+                <img
+                  class="review-item__img"
+                  src="./img/testimonials/reviewer-2-tab-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+              <h3 class="review-item__name">Sergey Rybachok</h3>
+              <p class="review-item__text">
+                Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka
+                are simply masterpieces! I fell in love with the quality of the
+                materials and the skill of the artisans behind each product.
+                This is my favorite embroidery shop where I always find
+                something special and unique.
+              </p>
+            </li>
+            <li class="review__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/testimonials/reviewer-1-desk-1x.png 1x,
+                    ./img/testimonials/reviewer-1-desk-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <img
+                  class="review-item__img"
+                  src="./img/testimonials/reviewer-3-desk-1x.png"
+                  alt="Collection item 1"
+                />
+              </picture>
+              <h3 class="review-item__name">Natalia Chatuk</h3>
+              <p class="review-item__text">
+                Vyshyvanka Vibes is a real find for everyone who appreciates
+                Ukrainian culture. Their embroidery reflects the spirit and
+                traditions of our people. I not only buy embroidered shirts for
+                myself, but also give them to my friends abroad as a symbol of
+                our beauty and national pride.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="">About us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">CUSTOMER ORDER</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">Our collection </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">TEstimonials</a>
+            </li>
+          </ul>
+          <h2 class="footer__title">
+            A touch of <span class="accent">Ukrainian</span> culture in every
+            embroidery
+          </h2>
+        </div>
+        <img class="footer__icon" src="./img/vyshyvanka/yellow.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>
