@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vyshyvanka Vibes</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css">
     <script src="./js/main.js" defer></script>
     <link
       rel="stylesheet"
@@ -19,21 +20,71 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Manrope:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+<link rel="manifest" href="./img/favicon/site.webmanifest">
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <a class="header__logo" href="./index.html">
-            <svg class="header-logo__icon" width="44" height="39">
-              <use href="./img/header/logo.svg"></use>
-            </svg>
-          </a>
-          <button class="header__open-menu">
-            <svg class="header-open__icon" width="36" height="24">
-              <use href="./img/header/mobile-menu-open.svg"></use>
-            </svg>
-          </button>
+          <div class="header-left-nav">
+            <a class="header__logo" href="./index.html">
+              <svg class="header-logo__icon" width="44" height="39">
+                <use href="./img/header/logo.svg"></use>
+              </svg>
+            </a>
+            <ul class="header__list footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#about">About us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#order">CUSTOMER ORDER</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#collection">Our collection </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#reviews">TEstimonials</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-right-nav">
+            <address class="header-address modal-address">
+              <a class="header-address__link modal-address__link" href="tel:380684439426">+380 (68) 443-94-26</a>
+            </address>
+            
+            <ul class="header-soc-list">
+              <li class="soc-item">
+                <a class="soc-link" href="">
+                  <svg class="soc-icon" width="28" height="28">
+                    <use href="./img/header/facebook.svg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a class="soc-link" href="">
+                  <svg class="soc-icon" width="28" height="28">
+                    <use href="./img/header/instagram.svg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a class="soc-link" href="">
+                  <svg class="soc-icon" width="28" height="28">
+                    <use href="./img/header/youtube.svg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button class="header__open-menu" id="open-menu">
+              <svg class="header-open__icon" width="36" height="24">
+                <use href="./img/header/mobile-menu-open.svg"></use>
+              </svg>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -42,17 +93,22 @@
       <!-- ==================================== HERO ==================================== -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">
-            Reviving the traditional
-            <span class="accent">Ukrainian</span> artistry in every stitch.
-          </h1>
-          <button class="hero__btn">
-            Order
-            <svg class="hero-btn__icon" width="26" height="10">
-              <use href="./img/hero/arrow.svg"></use>
-            </svg>
-          </button>
-          <picture>
+          <div class="hero-main">
+
+              <div class="hero-content">
+                <h1 class="hero__title">
+                  Reviving the traditional
+                  <span class="accent">Ukrainian</span> artistry in every stitch.
+                </h1>
+                <button class="hero__btn">
+                  Order
+                  <svg class="hero-btn__icon" width="26" height="10">
+                    <use href="./img/hero/arrow.svg"></use>
+                  </svg>
+                </button>
+              </div>
+
+         <picture>
             <source
               srcset="
                 ./img/hero/girl-desk-1x.png 1x,
@@ -65,7 +121,7 @@
                 ./img/hero/girl-tab-1x.png 1x,
                 ./img/hero/girl-tab-2x.png 2x
               "
-              media="(min-width: 779px)"
+              media="(min-width: 767px)"
             />
             <source
               srcset="
@@ -80,30 +136,42 @@
               alt="Hero girl"
             />
           </picture>
+            
+          </div>
+ 
+          <div class="hero-star">
+              <svg class="hero-star-icon" width="52" height="52">
+                <use href="./img/hero/star-sprite.svg#icon-star"></use>
+              </svg>
+
+              <p class="hero-star-text">all embroidery is made by hand</p>
+            </div>
         </div>
       </section>
 
       <!-- ==================================== ABOUT ==================================== -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
-          <h2 class="about__title">About us</h2>
-          <p class="about__desc">
-            The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
-            vyshyvanka comes to life with new zest and style. Our store offers a
-            wide selection of high-quality and authentic embroidery, which
-            combines the elegance of traditional needlework and modern design.
-          </p>
-          <p class="about__desc">
-            In "Vyshyvanka Vibes" you will find various models of embroidery,
-            from classic to modern, corresponding to the latest fashion trends.
-            Our embroidery is made using natural fabrics and is embroidered by
-            highly qualified craftsmen who convey the beauty of Ukrainian
-            culture in every detail.We believe that vyshyvanka is not just
-            clothing, but a symbol of national pride, the heritage of our
-            ancestors and a way of expressing one's individuality. Each
-            embroidery from "Vyshyvanka Vibes" has its own unique history and
-            symbolism, which gives it a special meaning.
-          </p>
+          <div class="about__text">
+            <h2 class="about__title">About us</h2>
+            <p class="about__desc">
+              The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
+              vyshyvanka comes to life with new zest and style. Our store offers a
+              wide selection of high-quality and authentic embroidery, which
+              combines the elegance of traditional needlework and modern design.
+            </p>
+            <p class="about__desc">
+              In "Vyshyvanka Vibes" you will find various models of embroidery,
+              from classic to modern, corresponding to the latest fashion trends.
+              Our embroidery is made using natural fabrics and is embroidered by
+              highly qualified craftsmen who convey the beauty of Ukrainian
+              culture in every detail.We believe that vyshyvanka is not just
+              clothing, but a symbol of national pride, the heritage of our
+              ancestors and a way of expressing one's individuality. Each
+              embroidery from "Vyshyvanka Vibes" has its own unique history and
+              symbolism, which gives it a special meaning.
+            </p>
+          </div>
           <picture>
             <source
               srcset="
@@ -117,7 +185,7 @@
                 ./img/about/about-tab-1x.png 1x,
                 ./img/about/about-tab-2x.png 2x
               "
-              media="(min-width: 779px)"
+              media="(min-width: 767px)"
             />
             <source
               srcset="
@@ -138,7 +206,7 @@
       </section>
 
       <!-- ==================================== COLLECTION ==================================== -->
-      <section class="collection">
+      <section class="collection" id="collection">
         <div class="container">
           <img
             class="collection__img-bg"
@@ -161,7 +229,7 @@
                     ./img/collection/collection-tab-1-1x.png 1x,
                     ./img/collection/collection-tab-1-2x.png 2x
                   "
-                  media="(min-width: 779px)"
+                  media="(min-width: 767px)"
                 />
                 <source
                   srcset="
@@ -179,6 +247,7 @@
               <h3 class="collection__sun-title">
                 AUGUST Poltava women's blouseRING
               </h3>
+              <p class="collection-price">3300 UAH</p>
             </li>
             <li class="collection__item">
               <picture>
@@ -194,7 +263,7 @@
                     ./img/collection/collection-tab-2-1x.png 1x,
                     ./img/collection/collection-tab-2-2x.png 2x
                   "
-                  media="(min-width: 779px)"
+                  media="(min-width: 767px)"
                 />
                 <source
                   srcset="
@@ -210,6 +279,7 @@
                 />
               </picture>
               <h3 class="collection__sun-title">Women's blouse Gorgany</h3>
+              <p class="collection-price">3350 UAH</p>
             </li>
             <li class="collection__item">
               <picture>
@@ -225,7 +295,7 @@
                     ./img/collection/collection-tab-3-1x.png 1x,
                     ./img/collection/collection-tab-3-2x.png 2x
                   "
-                  media="(min-width: 779px)"
+                  media="(min-width: 767px)"
                 />
                 <source
                   srcset="
@@ -241,6 +311,7 @@
                 />
               </picture>
               <h3 class="collection__sun-title">Women's blouse Crimea</h3>
+              <p class="collection-price">4000 UAH</p>
             </li>
             <li class="collection__item">
               <picture>
@@ -256,7 +327,7 @@
                     ./img/collection/collection-tab-4-1x.png 1x,
                     ./img/collection/collection-tab-4-2x.png 2x
                   "
-                  media="(min-width: 779px)"
+                  media="(min-width: 767px)"
                 />
                 <source
                   srcset="
@@ -272,6 +343,7 @@
                 />
               </picture>
               <h3 class="collection__sun-title">Men's shirt Verkhovina</h3>
+              <p class="collection-price">3100 UAH</p>
             </li>
             <li class="collection__item">
               <picture>
@@ -287,7 +359,7 @@
                     ./img/collection/collection-tab-5-1x.png 1x,
                     ./img/collection/collection-tab-5-2x.png 2x
                   "
-                  media="(min-width: 779px)"
+                  media="(min-width: 767px)"
                 />
                 <source
                   srcset="
@@ -303,6 +375,7 @@
                 />
               </picture>
               <h3 class="collection__sun-title">Mountain men's shirt</h3>
+              <p class="collection-price">3300 UAH</p>
             </li>
             <li class="collection__item">
               <picture>
@@ -318,7 +391,7 @@
                     ./img/collection/collection-tab-6-1x.png 1x,
                     ./img/collection/collection-tab-6-2x.png 2x
                   "
-                  media="(min-width: 779px)"
+                  media="(min-width: 767px)"
                 />
                 <source
                   srcset="
@@ -334,6 +407,7 @@
                 />
               </picture>
               <h3 class="collection__sun-title">Men's shirt Yasen</h3>
+              <p class="collection-price">1700 UAH</p>
             </li>
           </ul>
         </div>
@@ -354,7 +428,7 @@
               ./img/photo-section/img-tab-1x.png 1x,
               ./img/photo-section/img-tab-2x.png 2x
             "
-            media="(min-width: 779px)"
+            media="(min-width: 767px)"
           />
           <source
             srcset="
@@ -371,47 +445,72 @@
       </section>
 
       <!-- ==================================== ORDER ==================================== -->
-      <section class="order">
+      <section class="order" id="order">
         <div class="container">
-          <h2 class="order__title">
-            <span class="accent">Subscribe</span> our newsletter to receive the
-            latest news and exclusive offers every week.
-          </h2>
-          <form class="order__form">
-            <div class="order-form__wraper">
-              <input
-                class="order-form__input"
-                type="text"
-                name="name"
-                placeholder="Enter your full name"
-                aria-label="Enter your full name"
-              />
-              <input
-                class="order-form__input"
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                aria-label="Enter your email"
-              />
-              <textarea
-                class="order-form__input order-form__textarea"
-                name="comment"
-                placeholder="Comment"
-                aria-label="Comment"
-              ></textarea>
-            </div>
-            <button class="hero__btn order-form__btn">
-              send
-              <svg class="hero-btn__icon" width="26" height="10">
-                <use href="./img/hero/arrow.svg"></use>
-              </svg>
-            </button>
-          </form>
+          <div class="order__content">
+            <h2 class="order__title">
+              <span class="accent">Subscribe</span> our newsletter to receive the
+              latest news and exclusive offers every week.
+            </h2>
+            <form class="order__form">
+              <div class="order-form__wraper">
+                <input
+                  class="order-form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your full name"
+                  aria-label="Enter your full name"
+                />
+                <input
+                  class="order-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  aria-label="Enter your email"
+                />
+                <textarea
+                  class="order-form__input order-form__textarea"
+                  name="comment"
+                  placeholder="Comment"
+                  aria-label="Comment"
+                ></textarea>
+              </div>
+              <button class="hero__btn order-form__btn">
+                send
+                <svg class="hero-btn__icon" width="26" height="10">
+                  <use href="./img/hero/arrow.svg"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+                  <picture>
+          <source
+            srcset="
+              ./img/order/order-desk-1x.png 1x,
+              ./img/order/order-desk-2x.png 2x
+            "
+            media="(min-width: 1279px)"
+          />
+          <source
+            srcset="
+              ./img/order/order-tab-1x.png 1x,
+              ./img/order/order-tab-2x.png 2x
+            "
+            media="(min-width: 767px)"
+          />
+          <img 
+          class="order__img"
+            src="./img/order/order-tab-1x.png"
+            alt="Collection item 1"
+          />
+        </picture>
         </div>
+        <img class="order-bg" src="./img/vyshyvanka/silver.png" alt="">
       </section>
 
       <!-- ==================================== REVIEW ==================================== -->
-      <section class="review">
+      <section class="review" id="reviews">
         <div class="container">
           <h2 class="review__title">Testimonials</h2>
           <ul class="review__list">
@@ -429,7 +528,7 @@
                     ./img/testimonials/reviewer-1-tab-1x.png 1x,
                     ./img/testimonials/reviewer-1-tab-2x.png 2x
                   "
-                  media="(min-width: 779px)"
+                  media="(min-width: 767px)"
                 />
                 <source
                   srcset="
@@ -468,7 +567,7 @@
                     ./img/testimonials/reviewer-2-tab-1x.png 1x,
                     ./img/testimonials/reviewer-2-tab-2x.png 2x
                   "
-                  media="(min-width: 779px)"
+                  media="(min-width: 767px)"
                 />
                 <img
                   class="review-item__img"
@@ -539,5 +638,36 @@
         <img class="footer__icon" src="./img/vyshyvanka/yellow.png" alt="" />
       </div>
     </footer>
+
+    <div class="modal-wrapper" id="modal">
+      <div class="modal">
+        <nav class="modal-nav">
+          <div class="modal-top">
+            <address class="modal-address">
+              <a class="modal-address__link" href="tel:380684439426">+380 (68) 443-94-26</a>
+            </address>
+
+            <button class="modal-close-btn" id="close-menu">
+              <svg class="modal-close-icon" width="36" height="36">
+                <use href="./img/header/mobile-menu-close.svg"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="modal-nav-container">
+            <ul class="modal-list">
+              <li class="modal-item"><a class="modal-link" href="">About us</a></li>
+              <li class="modal-item"><a class="modal-link" href="">About us</a></li>
+              <li class="modal-item"><a class="modal-link" href="">CUSTOMER ORDER</a></li>
+              <li class="modal-item"><a class="modal-link" href="">TEstimonials</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="modal-bg">
+          <img class="modal-img" src="./img/vyshyvanka/black.png" alt="">
+        </div>
+      </div>
+    </div>
   </body>
 </html>
