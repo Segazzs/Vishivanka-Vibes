@@ -556,13 +556,13 @@ color: #1c2225;
 .footer {
   border-top: 1px solid rgba(252, 249, 249, 0.1);
   padding-top: 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer__wrapper {
   max-width: 375px;
   margin: 0 auto;
-  position: relative;
-  overflow: hidden;
 }
 
 .footer .container {
